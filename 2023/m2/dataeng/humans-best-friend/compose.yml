@@ -1,0 +1,14 @@
+
+services:
+  vote:
+    image: localhost:5000/vote:v1
+    ports:
+      - "5001:80"
+  result:
+    image: localhost:5000/result:v1
+    ports:
+      - "5002:80"
+  seed-data:
+    image: localhost:5000/seed-data:v1
+  worker:
+    image: localhost:5000/worker:v1
